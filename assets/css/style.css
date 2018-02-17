@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #888;
 }
 
+.italic {
+  font-style: italic;
+}
+
 header {
   background: linear-gradient(#000, #124a6b);
   border-bottom: 1px solid #171717;
@@ -218,7 +222,6 @@ textarea:focus {
 }
 .btn:focus {
   outline: none;
-  box-shadow: 0 6px 5px #333;
 }
 
 
