@@ -1,0 +1,138 @@
+/* sticky footer styling */
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1px 1fr auto;
+}
+header {
+  grid-row: 1;
+}
+.grid-content {
+  grid-row: 3;
+}
+footer {
+  grid-row: 4;
+}
+/* end sticky footer styling */
+
+/* header styling */
+header {
+  position: unset;
+  width: unset;
+}
+/* end header styling */
+
+/* general page styling */
+.grid {
+  padding: 50px 0;
+}
+.grid-content {
+  align-self: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.btns {
+  display: flex;
+  grid-row: 3;
+  margin: auto;
+  min-width: 50%;
+  padding: 30px 0;
+}
+#btn-row-one {
+  grid-row: 1;
+}
+#btn-row-two {
+  grid-row: 3;
+}
+.grid-btn {
+  margin: auto;
+}
+.change {
+  grid-row: 2;
+}
+.box  {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 30px 0;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+.odd {
+background-color: #421c1c;
+}
+.even {
+  background-color: #28275a;
+}
+/* end general page styling */
+
+
+/* changing grid styling */
+/* example one */
+#g1 {
+  grid-template-columns: 1fr 200px 200px 1fr;
+  grid-gap: 10px;
+  grid-row: 2;
+  background-image: url("../images/calvin-hobbes.jpg");
+  background-size: cover;
+  min-width: 60%;
+  max-width: 60%;
+  margin: auto;
+  padding: 70px 80px;
+  border: 2px solid #595959;
+  border-radius: 10px;
+}
+
+#g1 .six,
+#g1 .ten {
+  background-color: transparent;
+}
+
+#g1 .ten,
+#g1 .six {
+  border: 2px solid #000;
+  color: #000;
+}
+
+#g1 .three {
+  background-image: url("../images/alex-grey-christ.jpg");
+  background-size: cover;
+}
+/* end example one */
+
+/* example two */
+#g2 {
+  background-image: url("../images/coffee-shop.jpg");
+  background-size: cover;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr 300px 100px 1fr 1fr;
+  grid-gap: 20px;
+  min-width: 75%;
+  max-width: 75%;
+  margin: auto;
+}
+
+#g2 .box {
+  border: none;
+}
+
+#g2 .three {
+  background-image: url("../images/fire-ish-fly.jpg");
+  background-size: cover;
+}
+/* end example two */
+
+/* example three */
+#g3 {
+  background-image: url("../images/nebula-1.jpg");
+  background-size: cover;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 25px;
+  padding: 80px 25px;
+}
+/* end example three */
+
+.menu {
+  position:absolute;
+  top: unset;
+}

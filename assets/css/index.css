@@ -13,13 +13,14 @@
 }
 
 html {
+  background: linear-gradient(#000, 85%, #124a6b);
+  background-attachment: fixed;
   font-family: 'Dosis', Arial, Helvetica, sans-serif;
   font-size: 22px;
   color: #818181;
 }
 
 body {
-  background: linear-gradient(#000, 85%, #124a6b);
   display: grid;
   grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px 100px 100px 1fr;
   grid-template-rows: auto 1fr auto;

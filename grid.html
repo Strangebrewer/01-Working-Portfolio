@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Me</title>
+  <title>Playing With CSS Grid</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
   <link href="https://fonts.googleapis.com/css?family=Caudex|Lato" rel="stylesheet">
 </head>
 
@@ -51,49 +52,36 @@
     </div>
   </nav>
 
-  <div class="grid main-content">
+  <div class="grid-content">
 
-    <section>
-      <div class="section-content" id="contact">
-        <h2>Contact</h2>
-        <form action="#">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="John Smith">
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="example@gmail.com">
-          </label>
-          <label>
-            Message
-            <textarea name="message"></textarea>
-          </label>
-          <input class="btn" type="submit" value="Submit">
-        </form>
-      </div>
-    </section>
+    <div class="flex btns" id="btn-row-one">
+      <button class="grid-btn" id="example-one">Example 1</button>
+      <button class="grid-btn" id="example-two">Example 2</button>
+      <button class="grid-btn" id="example-three">Example 3</button>
+      <button class="grid-btn" id="example-four">Example 4</button>
+    </div>
 
-    <aside>
-      <div class="connect">
-        <h3>Connect with Me</h3>
-        <div>
+    <div class="grid change" id="g1">
+      <div class="box one odd">1</div>
+      <div class="box two even">2</div>
+      <div class="box three odd">3</div>
+      <div class="box four even">4</div>
+      <div class="box five odd">5</div>
+      <div class="box six even">6</div>
+      <div class="box seven odd">7</div>
+      <div class="box eight even">8</div>
+      <div class="box nine odd">9</div>
+      <div class="box ten even">10</div>
+      <div class="box eleven odd">11</div>
+      <div class="box twelve even">12</div>
+    </div>
 
-          <a href="https://github.com/Strangebrewer" target="_blank">
-            <img src="assets/images/github_icon.png" alt="github link">
-          </a>
-
-          <a href="https://www.linkedin.com/in/keith-allmon-40672382/" target="_blank">
-            <img src="assets/images/linkedin_icon.png" alt="linked in link">
-          </a>
-
-          <a href="https://stackoverflow.com/users/8777724/bka" target="_blank">
-            <img src="assets/images/stackoverflow_icon.png" alt="stack overflow link">
-          </a>
-
-        </div>
-      </div>
-    </aside>
+    <div class="flex btns" id="btn-row-two">
+      <button class="grid-btn" id="example-five">Example 5</button>
+      <button class="grid-btn" id="example-six">Example 6</button>
+      <button class="grid-btn" id="example-seven">Example 7</button>
+      <button class="grid-btn" id="example-eight">Example 8</button>
+    </div>
 
   </div>
 
@@ -102,6 +90,7 @@
   </footer>
 
   <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/grid.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
