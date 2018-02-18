@@ -1,36 +1,46 @@
 /* sticky footer styling */
+
 body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1px 1fr auto;
 }
+
 header {
   grid-row: 1;
 }
+
 .grid-content {
   grid-row: 3;
 }
+
 footer {
   grid-row: 4;
 }
+
 /* end sticky footer styling */
 
 /* header styling */
+
 header {
   position: unset;
   width: unset;
 }
+
 /* end header styling */
 
 /* general page styling */
+
 .grid {
   padding: 50px 0;
 }
+
 .grid-content {
   align-self: center;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 .btns {
   display: flex;
   grid-row: 3;
@@ -38,19 +48,24 @@ header {
   min-width: 50%;
   padding: 30px 0;
 }
+
 #btn-row-one {
   grid-row: 1;
 }
+
 #btn-row-two {
   grid-row: 3;
 }
+
 .grid-btn {
   margin: auto;
 }
+
 .change {
   grid-row: 2;
 }
-.box  {
+
+.box {
   font-size: 2em;
   font-weight: bold;
   padding: 30px 0;
@@ -58,17 +73,28 @@ header {
   text-align: center;
   border-radius: 10px;
 }
+
 .odd {
-background-color: #421c1c;
+  background-color: #421c1c;
 }
+
 .even {
   background-color: #28275a;
 }
+
+/* to make the hamburger menu work right on a grid page */
+
+.menu {
+  position: absolute;
+  top: unset;
+}
+
 /* end general page styling */
 
-
 /* changing grid styling */
+
 /* example one */
+
 #g1 {
   grid-template-columns: 1fr 200px 200px 1fr;
   grid-gap: 10px;
@@ -83,13 +109,8 @@ background-color: #421c1c;
   border-radius: 10px;
 }
 
-#g1 .six,
-#g1 .ten {
+#g1 .six, #g1 .ten {
   background-color: transparent;
-}
-
-#g1 .ten,
-#g1 .six {
   border: 2px solid #000;
   color: #000;
 }
@@ -98,9 +119,11 @@ background-color: #421c1c;
   background-image: url("../images/alex-grey-christ.jpg");
   background-size: cover;
 }
+
 /* end example one */
 
 /* example two */
+
 #g2 {
   background-image: url("../images/coffee-shop.jpg");
   background-size: cover;
@@ -120,9 +143,11 @@ background-color: #421c1c;
   background-image: url("../images/fire-ish-fly.jpg");
   background-size: cover;
 }
+
 /* end example two */
 
 /* example three */
+
 #g3 {
   background-image: url("../images/nebula-1.jpg");
   background-size: cover;
@@ -130,9 +155,464 @@ background-color: #421c1c;
   grid-gap: 25px;
   padding: 80px 25px;
 }
+
 /* end example three */
 
-.menu {
-  position:absolute;
-  top: unset;
+/* example four */
+
+#g4 {
+  background-image: url("../images/daenerys.jpg");
+  background-size: cover;
+  grid-template-columns: 1fr 2fr auto 2fr 1fr;
+  grid-gap: 10px;
+}
+
+#g4 .four {
+  background-image: url("../images/Keithfinity.jpg");
+  background-size: cover;
+}
+
+#g4 .two, #g4 .seven, #g4 .nine, #g4 .ten {
+  background: transparent;
+}
+
+/* end example four */
+
+/* example five */
+
+#g5 {
+  background-image: url("../images/still-river.jpg");
+  background-size: cover;
+  padding: 25px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 15px;
+  min-width: 80%;
+  max-width: 80%;
+  margin: auto;
+}
+
+#g5 .box {
+  background: linear-gradient(135deg, #999, 75%, #612d2d);
+  /* border: 2px solid #111; */
+  border: none;
+  color: #111;
+  line-height: .5;
+  padding: 20px;
+  opacity: .7;
+}
+
+#g5 .one {
+  grid-row: 1;
+  grid-column: 1 / 10;
+}
+
+#g5 .two {
+  grid-row: 2;
+  grid-column: 1 / 3;
+}
+
+#g5 .eight {
+  grid-row: 2;
+  grid-column: 8 / 10;
+}
+
+#g5 .nine {
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
+#g5 .ten {
+  grid-row: 4;
+  grid-column: 1 / 4;
+}
+
+#g5 .eleven {
+  grid-row: 5;
+  grid-column: 1 / 4;
+}
+
+#g5 .twelve {
+  grid-row: 3 / 6;
+  grid-column: 4 / 10;
+}
+
+#g5 .thirteen {
+  grid-row: 6;
+  grid-column: 1 / 7;
+}
+
+#g5 .fourteen {
+  grid-row: 6;
+  grid-column: 7 / 10;
+}
+
+#g5 .fifteen {
+  grid-row: 7;
+  grid-column: 1 / 10;
+}
+
+/* end example five */
+
+/* example six */
+
+#g6 {
+  background-image: url("../images/buddha.jpg");
+  background-size: stretch;
+  min-height: 100vh;
+  grid-template-columns: 1fr 200px 350px 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  padding: 0;
+}
+
+#g6 .six, #g6 .seven, #g6 .eight, #g6 .nine, #g6 .ten {
+  align-self: start;
+}
+
+/* end example six */
+
+/* example seven */
+
+#g7 {
+  background: linear-gradient(155deg, #000, 75%, #063d1d);
+  grid-template-columns: repeat(6, 75px);
+  grid-template-rows: repeat(6, 75px);
+  grid-gap: 15px;
+  padding: 50px;
+  margin: auto;
+}
+
+#g7 .one {
+  grid-row: 5 / 7;
+  grid-column: 5 / 7;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#g7 .ten {
+  grid-row: 4;
+  grid-column: 5 / 7;
+}
+
+#g7 .four {
+  grid-row: 5 / 7;
+  grid-column: 4;
+}
+
+#g7 .twelve {
+  grid-row: 4 / 7;
+  grid-column: 1 / 4;
+}
+
+#g7 .eleven {
+  grid-row: 3 / 5;
+  grid-column: 3 / 5;
+  z-index: 2;
+}
+
+#g7 .seven {
+  grid-row: 1 / 3;
+  grid-column: 5 / 7;
+  padding-left: 50px;
+  text-align: left;
+}
+
+#g7 .eight {
+  grid-row: 1;
+  grid-column: 6;
+  z-index: 2;
+}
+
+#g7 .nine {
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#g7 .three {
+  grid-row: 1;
+  grid-column: 2 / 5;
+  width: 200px;
+  margin: auto;
+}
+
+/* end example seven */
+
+/* example eight */
+
+#g8 {
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(12, 50px);
+  padding: 20px;
+  margin: auto;
+}
+
+#g8 .odd {
+  background: radial-gradient(#000, 75%, #cc00ff);
+  padding: 5px;
+}
+
+#g8 .even {
+  background: radial-gradient(#000, 75%, #00ff0d);
+  padding: 5px;
+}
+
+#g8 .one {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 99;
+}
+
+#g8 .two {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  z-index: 98;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .three {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+  z-index: 97;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .four {
+  grid-row: 1 / 5;
+  grid-column: 1 / 5;
+  z-index: 96;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .five {
+  grid-row: 1 / 6;
+  grid-column: 1 / 6;
+  z-index: 95;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .six {
+  grid-row: 1 / 7;
+  grid-column: 1 / 7;
+  z-index: 94;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .seven {
+  grid-row: 1 / 8;
+  grid-column: 1 / 8;
+  z-index: 93;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .eight {
+  grid-row: 1 / 9;
+  grid-column: 1 / 9;
+  z-index: 92;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .nine {
+  grid-row: 1 / 10;
+  grid-column: 1 / 10;
+  z-index: 91;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .ten {
+  grid-row: 1 / 11;
+  grid-column: 1 / 11;
+  z-index: 90;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .eleven {
+  grid-row: 1 / 12;
+  grid-column: 1 / 12;
+  z-index: 89;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#g8 .twelve {
+  grid-row: 1 / 13;
+  grid-column: 1 / 13;
+  z-index: 88;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* end example eight */
+
+/* example nine */
+
+#g9 {
+  background-color: #000;
+  border: 2px solid #850000;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #850000;
+  grid-template-columns: repeat(11, 50px);
+  grid-template-rows: repeat(11, 50px);
+  padding: 30px;
+  margin: auto;
+}
+
+#g9 .odd {
+  background: radial-gradient(#000, 80%, #380000);
+  border-radius: 50%;
+  padding: 0;
+}
+
+#g9 .even {
+  background: radial-gradient(#000, 80%, #b33030);
+  border-radius: 50%;
+  padding: 0;
+}
+
+#g9 .one {
+  grid-row: 6;
+  grid-column: 6;
+  z-index: 99;
+}
+
+#g9 .two {
+  grid-row: 5 / 8;
+  grid-column: 5 / 8;
+  z-index: 98;
+  text-align: center;
+}
+
+#g9 .three {
+  grid-row: 4 / 9;
+  grid-column: 4 / 9;
+  z-index: 97;
+  text-align: center;
+}
+
+#g9 .four {
+  grid-row: 3 / 10;
+  grid-column: 3 / 10;
+  z-index: 96;
+  text-align: center;
+}
+
+#g9 .five {
+  grid-row: 2 / 11;
+  grid-column: 2 / 11;
+  z-index: 95;
+  text-align: center;
+}
+
+#g9 .six {
+  grid-row: 1 / 12;
+  grid-column: 1 / 12;
+  z-index: 94;
+  text-align: center;
+}
+
+#g9 .seven,
+#g9 .eight,
+#g9 .nine,
+#g9 .ten,
+#g9 .eleven,
+#g9 .twelve {
+  display: none;
+}
+/* end example nine */
+
+/* example ten */
+#g10 {
+  background-color: #dddddd;
+  grid-template-columns: 1fr 120px 120px 120px 120px 120px 120px 120px 120px 1fr;
+  grid-template-rows: auto auto 1fr auto auto;
+  margin: auto;
+  padding: 50px;
+}
+
+#g10 .box {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 10px #111;
+}
+
+#g10 .odd {
+  background-image: url("../images/zen.jpg");
+  color: #000;
+}
+
+#g10 .even {
+  background-color: #222222;
+}
+
+#g10 .one {
+  grid-row: 1;
+  grid-column: 1 / 11;
+  padding: 20px 0;
+}
+
+#g10 .two {
+  grid-row: 2;
+  grid-column: 1 / 11;
+  padding: 120px 0;
+}
+
+#g10 .three {
+  display: none;
+}
+
+#g10 .four,
+#g10 .five,
+#g10 .six {
+  grid-row: 3;
+  height: 150px;
+}
+
+#g10 .four {
+  grid-column: 3 / 5;
+}
+
+#g10 .five {
+  grid-column: 5 / 7;
+}
+
+#g10 .six {
+  grid-column: 7 / 9;
+}
+
+#g10 .seven {
+  display: none;
+}
+
+#g10 .eight {
+  display: none;
+}
+
+#g10 .nine {
+  display: none;
+}
+
+#g10 .ten {
+  display: none;
+}
+
+#g10 .eleven {
+  grid-column: 2 / 10;
+  grid-row: 4;
+  padding: 20px 0;
+}
+
+#g10 .twelve {
+  display: none;
 }
