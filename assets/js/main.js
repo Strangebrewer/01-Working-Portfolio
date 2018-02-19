@@ -17,7 +17,7 @@ $(window).ready(function () {
     }
     else if (moreDivsFlag) {
       var narfIs = $(this).attr("narf");
-      if (narfIs === "g1" || narfIs === "g2" || narfIs === "g3" || narfIs === "g8" || narfIs === "g9" || narfIs === "g10") {
+      if (narfIs === "g1" || narfIs === "g2" || narfIs === "g3" || narfIs === "g7" || narfIs === "g8" || narfIs === "g9" || narfIs === "g10") {
         $(".thirteen").remove();
         $(".fourteen").remove();
         $(".fifteen").remove();
