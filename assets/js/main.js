@@ -1,5 +1,15 @@
 $(window).ready(function () {
 
+  $(document).on("scroll", function(){
+		if ($(document).scrollTop() > 100) {
+		  $("header").addClass("shrink");
+		}
+		else
+		{
+			$("header").removeClass("shrink");
+		}
+	});
+
   moreDivsFlag = false;
 
   $(".grid-btn").on("click", function () {
