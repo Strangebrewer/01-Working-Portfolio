@@ -327,8 +327,8 @@ header {
 #g7 .nine {
   grid-row: 2 / 4;
   grid-column: 2 / 4;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: auto;
 }
 
@@ -336,7 +336,7 @@ header {
   grid-row: 1;
   grid-column: 2 / 5;
   width: 200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* end example seven */
