@@ -219,20 +219,15 @@ textarea:focus {
   max-width: unset;
   opacity: .8;
 }
-.btn {
-  box-shadow: 0 6px 5px #333;
-}
 .btn:hover {
-  box-shadow: 0 6px 5px #333;
   opacity: 1;
 }
 .btn:active {
-  background-color: #888888;
-  box-shadow: 0 3px 5px #333;
   opacity: 1;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 .btn:focus {
+  box-shadow: none;
   outline: none;
 }
 
