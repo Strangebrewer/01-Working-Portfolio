@@ -1,6 +1,6 @@
 # Working-Portfolio
 
-My portfolio. Very much like the original portfolio from the first week of class, but with some additions and changes
+My portfolio. Very much like the original portfolio from the first week of class, but with some additions and changes:
 
 <ul>
   <li>A ‘Resources’ page with some links and a to-do list for myself</li>
