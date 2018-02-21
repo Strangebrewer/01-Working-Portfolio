@@ -15,31 +15,22 @@
 
   <header>
     <div class="header">
-      <h1>
-        <a href="index.html">Keith Allmon</a>
+      <h1>Keith Allmon</a>
       </h1>
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
       <nav class="main-nav">
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resources.html">Resources</a>
-        <!-- <a href="grid.html">CSS Grid</a> -->
+        <a href="index.html">About Me</a>
+        <a href="grid.html">CSS Grid</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
   <nav>
-    <div class="menu">
+    <div class="menu" id="menu">
       <ul>
-        <a href="about.html">
+        <a href="index.html">
           <li>About Me</li>
-        </a>
-        <a href="portfolio.html">
-          <li>Portfolio</li>
-        </a>
-        <a href="resources.html">
-          <li>Resources</li>
         </a>
         <a href="grid.html">
           <li>CSS Grid</li>
@@ -51,10 +42,10 @@
     </div>
   </nav>
 
-  <div class="grid main-content">
+  <div class="main-content">
 
-    <section>
-      <div class="section-content" id="contact">
+    <section id="contact">
+      <div class="section-content">
         <h2>Contact form coming soon...</h2>
         <!-- <form action="#">
           <label>
@@ -74,31 +65,109 @@
       </div>
     </section>
 
-    <aside>
-      <div class="connect">
-        <h3>Connect with Me</h3>
-        <div>
-
-          <a href="https://github.com/Strangebrewer" target="_blank">
-            <img src="assets/images/github_icon.png" alt="github link">
-          </a>
-
-          <a href="https://www.linkedin.com/in/keith-allmon-40672382/" target="_blank">
-            <img src="assets/images/linkedin_icon.png" alt="linked in link">
-          </a>
-
-          <a href="https://stackoverflow.com/users/8777724/bka" target="_blank">
-            <img src="assets/images/stackoverflow_icon.png" alt="stack overflow link">
-          </a>
-
-        </div>
-      </div>
-    </aside>
-
   </div>
 
-  <footer>
-    &#9400;Copyright 2018 Keith Allmon
+  <footer id="contact-footer">
+    <div class="footer-links">
+
+      <div class="first-col footer-col">
+
+        <h6 class="sub-list-heading">Useful Resources</h6>
+        <ul>
+          <li>
+            <a href="https://pixlr.com/editor" target="blank_">PIXLR Editor</a> - free online photo editor
+          </li>
+          <li>
+            <a href="https://fonts.google.com/" target="blank_">Google Fonts</a>
+          </li>
+          <li>
+            <a href="https://color.adobe.com/create/color-wheel/">Adobe Color CC</a> - find colors that go together</li>
+          <li>
+            <a href="https://www.iconfinder.com/">Icon Finder</a> - thousands of icons for free (more if you pay)
+          </li>
+          <li>
+            <a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a> - patterns for web backgrounds
+          </li>
+          <li>
+            <a href="https://caniuse.com/">Can I Use?</a> - find out if a feature us supported in different browsers
+          </li>
+          <li>
+            <a href="https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes">JavaScript Key Codes</a>
+          </li>
+          <li>
+            <a href="https://market.mashape.com/">Mashape</a> - API Marketplace
+          </li>
+        </ul>
+
+        <h6 class="sub-list-heading">Inspiration</h6>
+        <ul>
+          <li>
+            <a href="http://www.csszengarden.com/">CSS Zen Garden</a>
+          </li>
+          <li>
+            <a href="https://lynnandtonic.com/">Lynn Fisher</a> - great example of what's possible in web development</li>
+        </ul>
+
+      </div>
+
+      <div class="second-col footer-col">
+
+        <h6 class="sub-list-heading">Tutorials &amp; Guides</h6>
+        <ul>
+          <li>
+            <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md">WebDev with CS Foundations</a> - a comprehensive guide to learning the craft of web development
+          </li>
+          <li>
+            <a href="https://gridbyexample.com/" target="blank_">Grid by Example</a> - Rachel Andrews' CSS Grid layout guide
+          </li>
+          <li>
+            <a href="https://cssreference.io/">CSS Reference</a> - free visual guide to CSS
+          </li>
+          <li>
+            <a href="https://adam-marsden.co.uk/css-cheat-sheet">CSS Cheat Sheet</a>
+          </li>
+        </ul>
+
+        <h6 class="sub-list-heading">Good Advice</h6>
+        <ul>
+          <li>
+            <a href="http://typeplate.com/">Typeplate</a> - a primer on typography
+          </li>
+          <li>
+            <a href="http://eloquentjavascript.net/index.html">Eloquent JavaScript</a>
+          </li>
+          <li>
+            <a href="http://jensimmons.com/">Jen Simmons</a> - designer for Mozilla, host of the podcast The Web Ahead, and all around web design guru</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="connect">
+
+      <div class="connect-images">
+
+        <a href="https://github.com/Strangebrewer" target="_blank">
+          <img src="assets/images/github_icon.png" alt="github link">
+        </a>
+
+        <a href="https://www.linkedin.com/in/keith-allmon-40672382/" target="_blank">
+          <img src="assets/images/linkedin_icon.png" alt="linked in link">
+        </a>
+
+        <a href="https://stackoverflow.com/users/8777724/bka" target="_blank">
+          <img src="assets/images/stackoverflow_icon.png" alt="stack overflow link">
+        </a>
+
+      </div>
+
+    </div>
+
+    <p>
+      &#9400;Copyright 2018 Keith Allmon
+    </p>
+
   </footer>
 
   <script src="assets/js/jquery-3.3.1.js"></script>

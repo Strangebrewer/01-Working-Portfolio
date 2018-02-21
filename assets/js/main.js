@@ -2,11 +2,13 @@ $(window).ready(function () {
 
   $(document).on("scroll", function(){
 		if ($(document).scrollTop() > 100) {
-		  $("header").addClass("shrink");
+      $("header").addClass("shrink");
+      $("#menu").css("top", "75px");
 		}
 		else
 		{
 			$("header").removeClass("shrink");
+      $("#menu").css("top", "145px");
 		}
 	});
 

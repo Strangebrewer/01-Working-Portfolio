@@ -1,6 +1,6 @@
 /* sticky footer styling */
 
-body {
+body {background-color: #666;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1px 1fr auto;
@@ -23,8 +23,8 @@ footer {
 /* header styling */
 
 header {
-  position: unset;
-  width: unset;
+  position: fixed;
+  width: 100%;
 }
 
 /* end header styling */
@@ -39,6 +39,7 @@ header {
   align-self: center;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  margin-top: 250px;
 }
 
 .btns {
@@ -84,10 +85,10 @@ header {
 
 /* to make the hamburger menu work right on a grid page */
 
-.menu {
+/* .menu {
   position: absolute;
   top: unset;
-}
+} */
 
 /* end general page styling */
 
