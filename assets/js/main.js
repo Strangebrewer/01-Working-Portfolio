@@ -1,17 +1,35 @@
 $(window).ready(function () {
 
-  $(document).on("scroll", function(){
-		if ($(document).scrollTop() > 100) {
+  // shrinking header
+  $(document).on("scroll", function () {
+    if ($(document).scrollTop() > 100) {
       $("header").addClass("shrink");
       $("#menu").css("top", "75px");
-		}
-		else
-		{
-			$("header").removeClass("shrink");
+    }
+    else {
+      $("header").removeClass("shrink");
       $("#menu").css("top", "145px");
-		}
-	});
+    }
+  });
 
+  // hamburger menu toggle
+  $(".cross").hide();
+  $(".menu").hide();
+  $(".hamburger").click(function () {
+    $(".menu").slideToggle("slow", function () {
+      $(".hamburger").hide();
+      $(".cross").show();
+    });
+  });
+
+  $(".cross").click(function () {
+    $(".menu").slideToggle("slow", function () {
+      $(".cross").hide();
+      $(".hamburger").show();
+    });
+  });
+
+  // grid example buttons
   moreDivsFlag = false;
 
   $(".grid-btn").on("click", function () {
@@ -40,22 +58,6 @@ $(window).ready(function () {
         $(".change").attr("id", ($(this).attr("narf")));
       }
     }
-  });
-
-  $(".cross").hide();
-  $(".menu").hide();
-  $(".hamburger").click(function () {
-    $(".menu").slideToggle("slow", function () {
-      $(".hamburger").hide();
-      $(".cross").show();
-    });
-  });
-
-  $(".cross").click(function () {
-    $(".menu").slideToggle("slow", function () {
-      $(".cross").hide();
-      $(".hamburger").show();
-    });
   });
 
 });

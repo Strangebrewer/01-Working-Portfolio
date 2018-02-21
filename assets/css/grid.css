@@ -1,6 +1,6 @@
 /* sticky footer styling */
-
-body {background-color: #666;
+body {
+  background-image: url("../images/ravenna.png");
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1px 1fr auto;
@@ -17,20 +17,16 @@ header {
 footer {
   grid-row: 4;
 }
-
 /* end sticky footer styling */
 
 /* header styling */
-
 header {
   position: fixed;
   width: 100%;
 }
-
 /* end header styling */
 
 /* general page styling */
-
 .grid {
   padding: 50px 0;
 }
@@ -82,20 +78,10 @@ header {
 .even {
   background-color: #28275a;
 }
-
-/* to make the hamburger menu work right on a grid page */
-
-/* .menu {
-  position: absolute;
-  top: unset;
-} */
-
 /* end general page styling */
 
 /* changing grid styling */
-
 /* example one */
-
 #g1 {
   grid-template-columns: 1fr 200px 200px 1fr;
   grid-gap: 10px;
@@ -119,12 +105,11 @@ header {
 #g1 .three {
   background-image: url("../images/alex-grey-christ.jpg");
   background-size: cover;
+  color: #000;
 }
-
 /* end example one */
 
 /* example two */
-
 #g2 {
   background-image: url("../images/coffee-shop.jpg");
   background-size: cover;
@@ -144,11 +129,9 @@ header {
   background-image: url("../images/fire-ish-fly.jpg");
   background-size: cover;
 }
-
 /* end example two */
 
 /* example three */
-
 #g3 {
   background-image: url("../images/nebula-1.jpg");
   background-size: cover;
@@ -156,11 +139,9 @@ header {
   grid-gap: 25px;
   padding: 80px 25px;
 }
-
 /* end example three */
 
 /* example four */
-
 #g4 {
   background-image: url("../images/daenerys.jpg");
   background-size: cover;
@@ -176,11 +157,9 @@ header {
 #g4 .two, #g4 .seven, #g4 .nine, #g4 .ten {
   background: transparent;
 }
-
 /* end example four */
 
 /* example five */
-
 #g5 {
   background-image: url("../images/still-river.jpg");
   background-size: cover;
@@ -194,7 +173,6 @@ header {
 
 #g5 .box {
   background: linear-gradient(135deg, #999, 75%, #612d2d);
-  /* border: 2px solid #111; */
   border: none;
   color: #111;
   line-height: .5;
@@ -251,11 +229,9 @@ header {
   grid-row: 7;
   grid-column: 1 / 10;
 }
-
 /* end example five */
 
 /* example six */
-
 #g6 {
   background-image: url("../images/buddha.jpg");
   background-size: stretch;
@@ -269,11 +245,9 @@ header {
 #g6 .six, #g6 .seven, #g6 .eight, #g6 .nine, #g6 .ten {
   align-self: start;
 }
-
 /* end example six */
 
 /* example seven */
-
 #g7 {
   background: linear-gradient(155deg, #000, 75%, #063d1d);
   grid-template-columns: repeat(6, 75px);
@@ -339,11 +313,9 @@ header {
   width: 200px;
   margin: 0 auto;
 }
-
 /* end example seven */
 
 /* example eight */
-
 #g8 {
   grid-template-columns: repeat(12, 50px);
   grid-template-rows: repeat(12, 50px);
@@ -454,11 +426,9 @@ header {
   text-align: right;
   padding-right: 10px;
 }
-
 /* end example eight */
 
 /* example nine */
-
 #g9 {
   background-color: #000;
   border: 2px solid #850000;
@@ -545,11 +515,9 @@ header {
 #g10 .box {
   border: none;
   border-radius: 0;
-  box-shadow: 0 0 10px #111;
 }
 
 #g10 .odd {
-  background-image: url("../images/zen.jpg");
   color: #000;
 }
 
@@ -567,10 +535,6 @@ header {
   grid-row: 2;
   grid-column: 1 / 11;
   padding: 120px 0;
-}
-
-#g10 .three {
-  display: none;
 }
 
 #g10 .four,
@@ -592,28 +556,18 @@ header {
   grid-column: 7 / 9;
 }
 
-#g10 .seven {
-  display: none;
-}
-
-#g10 .eight {
-  display: none;
-}
-
-#g10 .nine {
-  display: none;
-}
-
-#g10 .ten {
-  display: none;
-}
-
 #g10 .eleven {
   grid-column: 2 / 10;
   grid-row: 4;
   padding: 20px 0;
 }
 
+#g10 .three,
+#g10 .seven,
+#g10 .eight,
+#g10 .nine,
+#g10 .ten,
 #g10 .twelve {
   display: none;
 }
+/* end example ten */
