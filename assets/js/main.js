@@ -2,13 +2,15 @@ $(window).ready(function () {
 
   // shrinking header
   $(document).on("scroll", function () {
-    if ($(document).scrollTop() > 100) {
-      $("header").addClass("shrink");
-      $("#menu").css("top", "75px");
+    if ($(document).scrollTop() > 450) {
+      $("header").addClass("scroll");
+      $(".menu").css("background-color",  "#124a6b");
+      $("header").fadeIn(400);
     }
     else {
-      $("header").removeClass("shrink");
-      $("#menu").css("top", "145px");
+      $("header").removeClass("scroll");
+      $(".menu").css("background-color",  "#000");
+      $("header").css("display", "none");
     }
   });
 
