@@ -70,6 +70,10 @@ header {
   flex-shrink: 0;
 }
 
+.droll {
+  flex-shrink: 0;
+}
+
 .main-content {
   flex: 1 0 auto;
 }
@@ -87,6 +91,19 @@ header {
   border-bottom: 1px solid #222;
   box-shadow: 0 0 20px #000;
   display: none;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  /* transition: all 0.2s ease-in-out; */
+  width: 100%;
+  z-index: 99;
+}
+
+.droll {
+  background: linear-gradient(#000, #124a6b);
+  border-bottom: 1px solid #222;
+  box-shadow: 0 0 20px #000;
+  display: block;
   padding: 15px;
   position: fixed;
   top: 0;
@@ -133,6 +150,20 @@ header a:visited {
 }
 
 header a:hover {
+  text-decoration: none;
+  color: #cecece;
+}
+
+.droll a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+.droll a:visited {
+  color: #afafaf;
+}
+
+.droll a:hover {
   text-decoration: none;
   color: #cecece;
 }
@@ -429,6 +460,12 @@ header a:hover {
 #img-box-five {
   grid-row: 5;
   grid-column: 6 / 8;
+  margin-bottom: 100px;
+}
+
+#img-box-six {
+  grid-row: 5;
+  grid-column: 8 / 11;
   margin-bottom: 100px;
 }
 
