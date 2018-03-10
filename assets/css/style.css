@@ -476,7 +476,6 @@ header a:hover {
 #about-me {
   grid-row: 8;
   grid-column: 3 / 11;
-  width: 1000px;
   margin: auto;
   padding-top: 100px;
   text-align: center;
@@ -686,5 +685,17 @@ footer {
   }
   .hamburger {
     display: unset;
+  }
+  .img-box {
+    width: 200px;
+  }
+  #img-box-four {
+    margin-bottom: 10px;
+  }  
+  #img-box-five {
+    margin-bottom: 10px;
+  }
+  #about-me {
+    width: unset;
   }
 }
