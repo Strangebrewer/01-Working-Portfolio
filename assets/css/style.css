@@ -454,6 +454,7 @@ header a:hover {
 #img-box-four {
   grid-row: 5;
   grid-column: 3 / 6;
+  align-self: flex-start;
   margin-bottom: 100px;
 }
 
@@ -688,12 +689,6 @@ footer {
   }
   .img-box {
     width: 200px;
-  }
-  #img-box-four {
-    margin-bottom: 10px;
-  }  
-  #img-box-five {
-    margin-bottom: 10px;
   }
   #about-me {
     width: unset;
