@@ -4,14 +4,21 @@ $(window).ready(function () {
   $(document).on("scroll", function () {
     if ($(document).scrollTop() > 450) {
       $("header").addClass("scroll");
-      $(".menu").css("background-color",  "#124a6b");
+      $(".menu").css("background-color", "#124a6b");
       $("header").fadeIn(400);
     }
     else {
       $("header").removeClass("scroll");
-      $(".menu").css("background-color",  "#000");
+      $(".menu").css("background-color", "#000");
       $("header").css("display", "none");
     }
+  });
+
+  //  Makes the '#' links scroll rather than instantly jump
+  $(".page-link").on("click", function () {
+    $("html, body").animate({
+      scrollTop: $($.attr(this, "href")).offset().top
+    }, 500);
   });
 
   // hamburger menu toggle
